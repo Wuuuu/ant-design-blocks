@@ -1,12 +1,13 @@
 {
   "name": "ant-design-blocks",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "umi blocks of Ant Design.",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
     "start-c": "node src/index.js -c",
     "dev": "umi dev",
+    "prepublishOnly": "np --no-cleanup --yolo --no-publish",
     "test": "jest --config .jest.js --no-cache"
   },
   "license": "MIT",
@@ -40,5 +41,8 @@
     "umi-plugin-react": "^1.10.1",
     "umi-types": "^0.3.0",
     "umi-utils": "^1.6.0"
+  },
+  "devDependencies": {
+    "np": "^5.0.1"
   }
 }
